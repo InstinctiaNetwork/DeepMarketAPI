@@ -28,7 +28,7 @@ public class DeepMarketManager {
                     }
                 }
             }
-        }, 0, 100, TimeUnit.MILLISECONDS);
+        }, 0, 1, TimeUnit.SECONDS);
     }
 
     public void closeMarket(){
