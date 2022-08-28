@@ -88,6 +88,9 @@ public class DeepMarketItem {
     }
 
     public void setPrice(Double price) {
+        if(this.history.size()>250){
+            this.history.remove(0);
+        }
         this.history.add(price);
         this.price = price;
         this.sellPrice = price/2;
