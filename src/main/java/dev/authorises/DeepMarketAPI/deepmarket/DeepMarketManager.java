@@ -23,7 +23,6 @@ public class DeepMarketManager {
             public void run() {
                 if(open){
                     for(DeepMarketItem item : marketItems){
-                        //item.recalculatePrices(0.61F);
                         item.recalculatePrices(0.01F);
                     }
                 }
