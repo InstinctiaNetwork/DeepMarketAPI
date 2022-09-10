@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
+
 public class DeepMarketManager {
     private ArrayList<DeepMarketItem> marketItems;
     private Boolean open;
@@ -27,7 +28,7 @@ public class DeepMarketManager {
                     }
                 }
             }
-        }, 0, 1, TimeUnit.SECONDS);
+        }, 0, 3, TimeUnit.SECONDS);
     }
 
     public void closeMarket(){

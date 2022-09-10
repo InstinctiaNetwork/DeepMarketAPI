@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class DeepMarketItem {
-    private final String itemid;
+    private final String itemId;
     private final Double minmumPrice;
     private final Double maximumPrice;
     private final Double startPrice;
@@ -16,7 +16,7 @@ public class DeepMarketItem {
     public ArrayList<Double> history = new ArrayList<>();
 
     public DeepMarketItem(String itemid, Double minmumPrice, Double maximumPrice, Double startPrice, DeepMarketCategory category, String material) {
-        this.itemid = itemid;
+        this.itemId = itemid;
         this.minmumPrice = minmumPrice;
         this.maximumPrice = maximumPrice;
         this.startPrice = startPrice;
@@ -48,7 +48,7 @@ public class DeepMarketItem {
     }
 
     public String getItemId() {
-        return itemid;
+        return itemId;
     }
 
     public Double getMinmumPrice() {
